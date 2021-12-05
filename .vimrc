@@ -1,4 +1,4 @@
-set co=90
+set co=90 " sets the writing column width to 70, taking into account the number line width below
 set lbr
 set nu
 set nuw=20
