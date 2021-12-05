@@ -13,4 +13,5 @@ au CursorMoved <buffer> :match Sentence ".\%>'(\%<')" " creates hi group *Senten
 au CursorMovedI <buffer> :match Sentence ".\%>'(\%<')" " p.s. all this preceded by any character *.* because it's not included in the sos marker
 
 " au CursorMoved <buffer> :normal zz
+" au CursorMovedI <buffer> (:insert Ctrl-something?)
 " au InsertEnter <buffer> (something to offset CursorMovedI screwing up zz...)
