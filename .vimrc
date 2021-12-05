@@ -9,8 +9,8 @@ hi LineNr ctermfg=233
 hi EndOfBuffer ctermfg=233
 hi Sentence ctermfg=15
 
-au CursorMoved <buffer> :match Sentence ".\%>'(\%<')"
-au CursorMovedI <buffer> :match Sentence ".\%>'(\%<')"
+au CursorMoved <buffer> :match Sentence ".\%>'(\%<')" " creates hi group *Sentence* following *\%>* start of sentence *'(* and preceding *\%<* eos *')*
+au CursorMovedI <buffer> :match Sentence ".\%>'(\%<')" " p.s. all this preceded by any character *.* because it's not included in the sos marker
 
 " au CursorMoved <buffer> :normal zz
 " au InsertEnter <buffer> (something to offset CursorMovedI screwing up zz...)
